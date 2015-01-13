@@ -1,0 +1,13 @@
+# Settings for AudioTagManager
+# Database Settings
+DB{
+	database = jdbc:postgresql://localhost/audiotagmanager
+	username = audiotagmanager
+	password = audiotagmanager
+
+	# SQL Copy function (to get the data into the DB)
+	copy{
+		batchsize = 200
+		buffersize = 150000
+	}
+}
